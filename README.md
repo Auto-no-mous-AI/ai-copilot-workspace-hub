@@ -8,26 +8,18 @@ Parent orchestration workspace for the AI Copilot multi-repo platform.
 
 - clones or updates the 8 platform repos into one workspace
 - bootstraps local dependencies across SDKs, examples, and infra
+- runs a single smoke command across SDKs, examples, and marketing
 - documents the repo map and recommended developer flow
-
-## Repositories managed
-
-- `ai-copilot-sdk`
-- `ai-copilot-sdk-react`
-- `ai-copilot-sdk-angular`
-- `ai-copilot-marketing-site`
-- `ai-copilot-examples`
-- `ai-copilot-infra`
-- `ai-copilot-observability`
-- `ai-copilot-security`
 
 ## Quick start
 
 ```bash
 npm run bootstrap:workspace
+npm run smoke:workspace
 ```
 
-## CI And Release
+## Key docs
 
-- Manual CI trigger is available through the `CI` workflow in GitHub Actions.
-- Release instructions live in [docs/releasing.md](./docs/releasing.md).
+- [Workspace overview](./docs/workspace-overview.md)
+- [Developer handbook](./docs/developer-handbook.md)
+- [Releasing](./docs/releasing.md)

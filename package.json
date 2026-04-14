@@ -3,6 +3,8 @@
   "private": true,
   "scripts": {
     "bootstrap:workspace": "powershell -ExecutionPolicy Bypass -File ./scripts/bootstrap-workspace.ps1",
-    "validate:manifest": "node ./scripts/validate-manifest.mjs"
+    "smoke:workspace": "powershell -ExecutionPolicy Bypass -File ./scripts/smoke-workspace.ps1",
+    "validate:manifest": "node ./scripts/validate-manifest.mjs",
+    "validate:scripts": "node ./scripts/validate-scripts.mjs"
   }
 }
