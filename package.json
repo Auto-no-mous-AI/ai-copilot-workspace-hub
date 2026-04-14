@@ -1,0 +1,8 @@
+{
+  "name": "ai-copilot-workspace-hub",
+  "private": true,
+  "scripts": {
+    "bootstrap:workspace": "powershell -ExecutionPolicy Bypass -File ./scripts/bootstrap-workspace.ps1",
+    "validate:manifest": "node ./scripts/validate-manifest.mjs"
+  }
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "name": "ai-copilot-sdk",
+    "url": "https://github.com/Auto-no-mous-AI/ai-copilot-sdk.git"
+  },
+  {
+    "name": "ai-copilot-sdk-react",
+    "url": "https://github.com/Auto-no-mous-AI/ai-copilot-sdk-react.git"
+  },
+  {
+    "name": "ai-copilot-sdk-angular",
+    "url": "https://github.com/Auto-no-mous-AI/ai-copilot-sdk-angular.git"
+  },
+  {
+    "name": "ai-copilot-marketing-site",
+    "url": "https://github.com/Auto-no-mous-AI/ai-copilot-marketing-site.git"
+  },
+  {
+    "name": "ai-copilot-examples",
+    "url": "https://github.com/Auto-no-mous-AI/ai-copilot-examples.git"
+  },
+  {
+    "name": "ai-copilot-infra",
+    "url": "https://github.com/Auto-no-mous-AI/ai-copilot-infra.git"
+  },
+  {
+    "name": "ai-copilot-observability",
+    "url": "https://github.com/Auto-no-mous-AI/ai-copilot-observability.git"
+  },
+  {
+    "name": "ai-copilot-security",
+    "url": "https://github.com/Auto-no-mous-AI/ai-copilot-security.git"
+  }
+]

@@ -1,0 +1,32 @@
+name: CI
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Validate manifest
+        run: node ./scripts/validate-manifest.mjs
+
+      - name: Validate PowerShell bootstrap
+        shell: pwsh
+        run: |
+          [scriptblock]::Create((Get-Content scripts/bootstrap-workspace.ps1 -Raw)) | Out-Null
